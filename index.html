@@ -10,13 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark_mode">
     <div id="resultArea"></div>
     <table>
         <tr>
             <td class="ac-delete" onclick="deleteALL()">AC</td>
             <td class="ac-delete" onclick="deleteLast()">DEL</td>
-            <td onclick="calculater(' % ')" class="">%</td>
+            <td><button id="dark_mode_button" class="change-color">Dark/Light Mode</button></td> 
 
             <td onclick="calculater(' / ')" class="special-symbols">/</td>
         </tr>
@@ -40,8 +40,8 @@
         </tr>       
         <tr>
             <td onclick="calculater(0)">0</td>
+            <td onclick="calculater('0.')">0,</td>            
             <td onclick="calculater('.')">,</td>
-            <td></td>            
             <td onclick="calculateResult()" id="result">=</td>
         </tr>
     </table>

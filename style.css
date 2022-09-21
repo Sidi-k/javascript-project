@@ -1,39 +1,53 @@
-
-
+:root{
+  --primary-color: white;
+  --secondary-color:black;
+  --third-color: rgb(235, 235, 235);
+  --four-color: rgb(206, 206, 206);
+  --five-color: rgb(23, 121, 233);
+  --six-color: rgb(58, 187, 238);
+}
+.dark_mode{
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color:rgb(255, 255, 255);
+  --third-color: rgb(25, 25, 25);
+  --four-color: rgb(30, 30, 30);
+  --five-color: rgb(233, 166, 23);
+  --six-color: rgb(233, 166, 23);
+  
+}
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
 }
-
 table {
   width: 100%;
   height: 70vh;
-  color: white;
-  background-color: rgb(25, 25, 25);
+  color: var(--secondary-color);
+  background-color: var(--third-color);
   padding-bottom: 110px;
 }
 
 td {
   width: 25%;
   text-align: center;
-  background-color: #141414;
+  background-color: var(--primary-color);
   font-size: 30px;
   border-radius: 10%;
 }
 
 td:hover {
     cursor: pointer;
-  background-color: rgb(30, 30, 30);
+  background-color:var(--four-color);
 }
 
 .ac-delete:hover {
-  color: rgb(233, 166, 23);
+  color: var(--five-color);
 }
 
 #resultArea {
   height: 30vh;
-  background-color: rgb(40, 40, 40);
-  color: white;
+  background-color:var(--primary-color);
+  color:  var(--secondary-color);
   font-size: 64px;
   display: flex;
   justify-content: flex-end;
@@ -43,15 +57,24 @@ td:hover {
 }
 
 #result {
-  background-color: rgb(233, 166, 23);
+  background-color:var(--five-color);
 }
 
 
 #result:hover {
-  background-color: rgb(233, 192, 104);
+  background-color:var(--six-color);
 }
 
 
 .special-symbols {
-  background-color: rgba(25, 25, 25);
+  background-color:var(--third-color);
+}
+
+
+.change-color{
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color:  var(--secondary-color);
 }
